@@ -1,9 +1,16 @@
-const cardButton = document.querySelector('.services__button-more');
-const itemsChange = document.querySelectorAll('.services__item--hidden')
+const servicesCard = document.querySelectorAll(".services__card");
 
-cardButton.addEventListener('click', function () {
-  itemsChange.forEach(function(itemChange) {
-    itemChange.classList.add('active')
-  });
-  cardButton.classList.add('none');
+servicesCard.forEach((card) => {
+	card.addEventListener("click", (event) => {
+		const cardBtn = card.querySelector(".services__button-more");
+		const hiddenItem = card.querySelectorAll(".services__item--hidden");
+
+		if (cardBtn == event.target) {
+			hiddenItem.forEach((item) => {
+				item.classList.toggle("active");
+			});
+			cardBtn.textContent =
+				cardBtn.textContent == "Подробнее" ? "Скрыть" : "Подробнее";
+		}
+	});
 });
