@@ -1325,6 +1325,45 @@ body.lock {
   }
 }
 
+.about {
+  padding: 40px 0;
+}
+@media screen and (max-width: 576px) {
+  .about {
+    padding: 20px 0;
+  }
+}
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about__video {
+  width: 900px;
+  height: 508px;
+}
+@media screen and (max-width: 992px) {
+  .about__video {
+    width: 630px;
+    height: 355px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__video {
+    width: 440px;
+    height: 248px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about__video {
+    width: 250px;
+    height: 140px;
+  }
+}
+
 .steps {
   padding-top: 75px;
   padding-bottom: 115px;
