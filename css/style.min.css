@@ -570,6 +570,12 @@ body.lock {
   }
 }
 
+.orange {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 700;
+  color: #FFC771;
+}
+
 .header {
   padding-top: 30px;
   position: absolute;
@@ -968,11 +974,6 @@ body.lock {
   margin-bottom: 20px;
   max-width: 820px;
 }
-.places__descr--orange {
-  font-family: "Gilroy-Bold", sans-serif;
-  font-weight: 700;
-  color: #FFC771;
-}
 .places__inner-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1041,7 +1042,7 @@ body.lock {
   -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.45);
           box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.45);
 }
-.places__excerpt {
+.places__card-excerpt {
   font-family: "Gilroy-Bold", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -1074,11 +1075,6 @@ body.lock {
 }
 .services__title {
   margin-bottom: 5px;
-}
-.services__descr--orange {
-  font-family: "Gilroy-Bold", sans-serif;
-  font-weight: 700;
-  color: #FFC771;
 }
 .services__text {
   margin: 0;
@@ -1253,9 +1249,21 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about__title {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 576px) {
+  .about__title {
+    margin-bottom: 20px;
+  }
 }
 .about__video {
   width: 900px;
@@ -1337,11 +1345,6 @@ body.lock {
     margin-bottom: 35px;
   }
 }
-.steps__descr--orange {
-  font-family: "Gilroy-Bold", sans-serif;
-  font-weight: 700;
-  color: #FFC771;
-}
 .steps__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1369,6 +1372,9 @@ body.lock {
 }
 @media screen and (max-width: 576px) {
   .steps__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 30px;
     max-width: 275px;
   }
@@ -1522,11 +1528,6 @@ body.lock {
     margin-bottom: 20px;
   }
 }
-.benefit__excerpt--orange {
-  font-family: "Gilroy-Bold", sans-serif;
-  font-weight: 700;
-  color: #FFC771;
-}
 .benefit__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1651,11 +1652,6 @@ body.lock {
   .working__title {
     margin-bottom: 15px;
   }
-}
-.working__descr--orange {
-  font-family: "Gilroy-Bold", sans-serif;
-  font-weight: 700;
-  color: #FFC771;
 }
 .working__inner-swiper {
   max-width: 500px;
@@ -1835,11 +1831,6 @@ body.lock {
 .price__title {
   margin-bottom: 30px;
   max-width: 700px;
-}
-.price__descr--orange {
-  font-family: "Gilroy-Bold", sans-serif;
-  font-weight: 700;
-  color: #FFC771;
 }
 .price__table {
   margin-bottom: 20px;
