@@ -10,6 +10,7 @@
 
   &__title
     margin-bottom: 30px
+    max-width: 700px
 
   &__descr
     &--orange
@@ -18,9 +19,11 @@
       color: $macaroni-cheese
 
   &__table
+    margin-bottom: 20px
     width: 100%
     border-collapse: collapse
     @media screen and ( max-width: 576px )
+      margin-bottom: 5px
       overflow-x: scroll
       display: block
 
@@ -62,3 +65,13 @@
     @media screen and ( max-width: 576px )
       padding: 5px
       vertical-align: top
+
+  &__text
+    margin: 0
+    text-align: center
+    @media screen and ( max-width: 768px )
+      font-size: 20px
+      line-height: 24px
+    @media screen and ( max-width: 576px )
+      font-size: 16px
+      line-height: 20px
