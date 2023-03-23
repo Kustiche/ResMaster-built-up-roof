@@ -784,8 +784,8 @@ body.lock {
 
 .hero {
   position: relative;
-  padding-top: 280px;
-  padding-bottom: 280px;
+  padding-top: 340px;
+  padding-bottom: 340px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../img/hero/hero-background.jpg);
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/hero/hero-background.jpg);
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/hero/hero-background.jpg);
@@ -793,28 +793,28 @@ body.lock {
   background-size: cover;
   background-position: center;
 }
-@media screen and (max-width: 1440px) {
-  .hero {
-    padding-top: 250px;
-    padding-bottom: 250px;
-  }
-}
 @media screen and (max-width: 1200px) {
   .hero {
-    padding-top: 210px;
-    padding-bottom: 210px;
+    padding-top: 260px;
+    padding-bottom: 260px;
   }
 }
 @media screen and (max-width: 992px) {
   .hero {
-    padding-top: 175px;
-    padding-bottom: 175px;
+    padding-top: 195px;
+    padding-bottom: 195px;
   }
 }
 @media screen and (max-width: 768px) {
   .hero {
-    padding-top: 135px;
-    padding-bottom: 85px;
+    padding-top: 155px;
+    padding-bottom: 155px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero {
+    padding-top: 125px;
+    padding-bottom: 125px;
   }
 }
 .hero__wrap {
